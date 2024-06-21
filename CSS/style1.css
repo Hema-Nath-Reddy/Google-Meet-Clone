@@ -1,0 +1,104 @@
+dialog {
+  border: none;
+}
+.input-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: var(--max1);
+  border-radius: 10px;
+  width: max(35dvw, 35dvh);
+}
+.input-name label {
+  font-size: 90%;
+}
+.input-name * {
+  color: black;
+}
+.input-name form {
+  display: flex;
+  flex-direction: column;
+}
+.input-name form input {
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: var(--maxhalf);
+  margin: var(--maxhalf) 0;
+  font-size: 90%;
+}
+.input-name form .close {
+  background-color: rgba(0, 0, 255, 0.8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: var(--maxfifth);
+}
+.input-name form .close:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 255);
+}
+.video-not-allowed,
+.audio-not-allowed {
+  border-radius: 20px;
+  width: max(50dvw, 50dvh);
+  height: max(25dvw, 25dvh);
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-not-allowed img,
+.audio-not-allowed img {
+  width: 50%;
+}
+.video-not-allowed .extra,
+.audio-not-allowed .extra {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  height: 60%;
+  width: 50%;
+}
+.video-not-allowed .extra h1,
+.audio-not-allowed .extra h1 {
+  color: #444746;
+  font-weight: normal;
+  font-size: 120%;
+}
+.video-not-allowed .extra ol,
+.audio-not-allowed .extra ol {
+  margin-left: var(--max1);
+}
+.video-not-allowed .extra ol li,
+.audio-not-allowed .extra ol li {
+  color: #535555;
+}
+.video-not-allowed .extra ol li svg,
+.audio-not-allowed .extra ol li svg {
+  width: var(--max1);
+  aspect-ratio: 1/1;
+}
+.video-not-allowed .Icons,
+.audio-not-allowed .Icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--maxhalf);
+  margin: var(--maxhalf);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+.video-not-allowed .Icons:hover,
+.audio-not-allowed .Icons:hover {
+  background-color: #f0f1f1;
+  cursor: pointer;
+}
+
